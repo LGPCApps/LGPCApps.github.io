@@ -1,5 +1,48 @@
+<!DOCTYPE html>
 <html>
+  <head>
+    <title>My App</title>
+  </head>
+  <body>
+    <label for="version">Version:</label>
+    <select id="version">
+      <option value="v1.0">1.0</option>
+      <option value="v2.0">2.0</option>
+      <option value="v3.0">3.0</option>
+    </select>
+    
+    <label for="language">Language:</label>
+    <select id="language">
+      <option value="en">English</option>
+      <option value="es">Español</option>
+      <option value="fr">Français</option>
+    </select>
 
-<body>Hello, gram world!</body>
+    <div id="content">
+      <!-- Content will be dynamically generated based on version and language -->
+    </div>
 
+    <script>
+      const versionDropdown = document.querySelector("#version");
+      const languageDropdown = document.querySelector("#language");
+      const contentDiv = document.querySelector("#content");
+      
+      function generateContent(version, language) {
+        // Replace this with your own code to generate the content based on version and language
+        contentDiv.innerHTML = `This is version ${version} in ${language}.`;
+      }
+      
+      // Generate initial content based on default values
+      generateContent(versionDropdown.value, languageDropdown.value);
+      
+      // Regenerate content when version or language changes
+      versionDropdown.addEventListener("change", () => {
+        generateContent(versionDropdown.value, languageDropdown.value);
+      });
+      
+      languageDropdown.addEventListener("change", () => {
+        generateContent(versionDropdown.value, languageDropdown.value);
+      });
+    </script>
+  </body>
 </html>
