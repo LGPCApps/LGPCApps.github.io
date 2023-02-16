@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>Document</title>
+
+</head>
+<style>
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+head {
+    display: none;
+}
+body {
+    /* padding-top: 2.75rem; */
+    margin: 0;
+    display: block;
+    line-height: 1.23;
+    overflow-x: hidden;
+}
+body.spx-withbuttonbar {
+    padding-bottom: 2.75rem;
+}
+.container {
+    padding: 0;
+    font-size: 1rem;
+}
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    transform: translateZ(0);
+}
+.terms-select-info, .terms_select_area {
+    width: 100%;
+    margin: 1.3rem 0;
+    padding: 0 1rem;
+    box-sizing: border-box;
+}
+.terms_select_area .form-control {
+    width: 100%;
+}
+
+.spx_section_subtitle {
+    font-size: .875rem;
+    font-weight: bold;
+    color: #607878;
+    margin-bottom: 8px;
+}
+
+select.form-control {
+    text-align: left;
+    border: 1px solid #5b5b5b;
+    background-color: #fff!important;
+    padding: 6px 26px 6px 8px;
+    background-image: url(../images/textfield_spinner_nomal_focus_error_pressed.svg);
+    background-size: 26px 36px;
+    background-repeat: no-repeat;
+    background-position: right center;
+    height: auto;
+    min-height: 1.75rem;
+    border-radius: 2px;
+    display: inline-block;
+    width: inherit;
+    font-size: .875rem;
+    align-items: flex-start;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    white-space: normal;
+    word-break: break-all;
+}
+
+option {
+    font-weight: normal;
+    display: block;
+    white-space: nowrap;
+    min-height: 1.2em;
+    padding: 0px 2px 1px;
+}
+.section06 {
+    padding: 0 16px 44px 16px;
+}
+
+.section35_topmessage {
+    font-size: .875rem;
+    color: #5b6770;
+    margin: 1.3rem 0;
+}
+
+.spx-actionbar {
+    background-color: #fff;
+    border: 0;
+    min-height: 2.75rem;
+}
+.navbar-default {
+    background-color: #f8f8f8;
+    border-color: #e7e7e7;
+}
+.navbar-fixed-top {
+    top: 0;
+    border-width: 0 0 1px;
+}
+.navbar {
+    border-radius: 4px;
+}
+.spx-actionbar-button {
+    height: 2.75rem;
+    width: 2.75rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-size: cover;
+    background-image: url(../images/btn_ab_back_nomal.png);
+    background-position: 0 0;
+    border-radius: 100%;
+}
+.waves-effect {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    overflow: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    vertical-align: middle;
+    z-index: 1;
+    will-change: opacity,transform;
+}
+.spx-actionbar-title {
+    display: flex;
+    align-items: center;
+    padding-top: 0.1rem;
+    padding-bottom: 0;
+}
+.spx-actionbar-title {
+    padding: 0.75rem 0.9375rem;
+    font-size: 1rem;
+    color: #262626;
+    min-height: 2.75rem;
+    /* display: table-cell; */
+    vertical-align: middle;
+    font-weight: bold;
+}
+body h1{
+    font-size: 1rem;
+    line-height: 1.23;
+    font-weight: bold;
+    margin: 0;
+}
+.hide-text {
+    display: block;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1px;
+    height: 1px;
+    z-index: -1;
+    font-size: 0;
+    line-height: 0;
+    padding: 0;
+    margin: 0;
+    color: transparent;
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+}
+html, body, html * {
+    font: -apple-system-body;
+}
+</style>
+<body class="spx-withbuttonbar">
+  <div class="spx-actionbar navbar navbar-default navbar-fixed-top">
+    <div class="container animated ">
+    <a class="spx-actionbar-button waves-effect" href="javascript:void(0);" role="button" style="display: none;"><span class="hide-text">뒤로</span></a>
+    <div class="spx-actionbar-title">
+      
+    <h1>Terms of Use</h1>
+  </div>
+    </div>
+  </div>
+  <div class ="container animated">
+    <div class="terms_select_area" id="terms_history">
+      <label for="terms_list" class="spx_section_subtitle">Select the terms of use</label>
+      <select name="terms_list" id="terms_list" class="form-control" autocomplete="off">
+        <option id="20230113017_KR">Effective Date 2023/03/09</option>
+        <!-- <option id="20221215067_KR">Previous Imprementation Date 2022/12/15</option> -->
+      </select>
+    </div>
+    <div class="section06">
+      <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:center;line-height:107%;background:white;'><strong><span style='font-size:20px;font-family:"맑은 고딕";color:#333333;'>LG Quick Guide&nbsp;</span></strong><strong><span style='font-size:20px;font-family:"맑은 고딕";color:#333333;'>서비스 이용약관(영문Test)</span></strong></p>
+      <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>&nbsp;</span></p>
+      <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>LG</span><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>전자(이하 &ldquo;<strong><span style='font-family:"맑은 고딕";'>회사</span></strong>&rdquo;)의 제품 및 서비스를 선택한 여러분(이하 &rdquo;<strong><span style='font-family:"맑은 고딕";'>이용자</span></strong>&rdquo;)께 감사 드립니다.</span></p>
+      <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>LG Quick Guide&nbsp;</span><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>서비스 이용약관(이하 &ldquo;본 약관&rdquo;)에는 회사의 LG Quick Guide&nbsp;와 관련하여 회사가 제공하는 다양한 모바일 어플리케이션 서비스(총칭하여 이하 &ldquo;<strong><span style='font-family:"맑은 고딕";'>LG Quick Guide&nbsp;</span></strong><strong><span style='font-family:"맑은 고딕";'>서비스</span></strong>&rdquo;)인 LG Quick Guide&nbsp;앱 이용 시 알아야 할 아래 예시와 같은 사항이 포함되어 있습니다.</span></p>
+      <p style='margin-right:0cm;margin-left:20.0pt;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>&bull; 이용자의 LG Quick Guide&nbsp;서비스 이용절차 및 회사의 서비스 제공 방식</span></p>
+      <p style='margin-right:0cm;margin-left:20.0pt;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>&bull; 이용자의 LG Quick Guide&nbsp;서비스 이용에 관하여 회사 및 이용자 간 권리&middot;의무 및 이용 규칙</span></p>
+      <p style='margin-right:0cm;margin-left:20.0pt;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>&bull; LG Quick Guide&nbsp;서비스에서 사용 가능한 콘텐츠 및 소프트웨어의 지식재산권 및 그 권리관계</span></p>
+      <p style='margin-right:0cm;margin-left:20.0pt;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>&bull; 이용자가 LG Quick Guide&nbsp;서비스 이용과 관련하여 가지는 기타 법적 권리</span></p>
+      <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>&nbsp;</span></p>
+      <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>LG Quick Guide&nbsp;</span><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>서비스를 이용하려면 본 약관에 동의하여야 합니다.&nbsp;본 약관의 내용을 자세히 살펴봐 주시기 바랍니다.&nbsp;본 약관 외에도 회사는&nbsp;</span><span style="color:black;"><a href="https://qt-kr.m.lgaccount.com/customer/terms_detail?terms_type=PRV_PRAL_HOME&terms_svcCode=SVC316&country=KR&language=ko-KR&terms_publish=N&division=noticeterms"><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>LG Quick Guide&nbsp;</span><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>서비스</span><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>&nbsp;</span><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>개인정보</span><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>&nbsp;</span><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>처리방침</span></a></span><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>&nbsp;</span><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>등 LG Quick Guide&nbsp;서비스 운영 정책을 게시하고 있으므로,&nbsp;관련 내용의 이해를 위하여 읽어 보실 것을 권장합니다.</span></p>
+      <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>회사가 제공하는 LG Quick Guide&nbsp;서비스에는 기본적으로 본 약관이 적용됩니다.&nbsp;다만,&nbsp;회사의 다양한 여러 LG Quick Guide&nbsp;서비스의 제공과 관련하여 본 약관 외에 서비스특별조건 또는 추가약관이 제공될 수 있으며,&nbsp;서비스특별조건 및 추가약관은 본 약관에 우선하여 적용됩니다.&nbsp;또한,&nbsp;일부 서비스에 대해서는 정책,&nbsp;지침,&nbsp;안내 및 고지 등이 추가로 제공될 수 있으므로,&nbsp;개별 서비스 이용 전 주의하여 읽어 보시기 바랍니다.&nbsp;귀하는 해당 서비스 이용 시 각 추가약관의 내용을 확인할 수 있습니다.</span></p>
+      <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>&nbsp;</span></p>
+      <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>&nbsp;</span></p>
+      <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><strong><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>1. LG Quick Guide&nbsp;</span></strong><strong><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>서비스 제공자</span></strong></p>
+      <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>본 약관에 따라 LG Quick Guide&nbsp;서비스를 제공하기 위하여 이용자와 계약을 체결하는 주체는 다음과 같습니다.</span></p>
+      <p style='margin-right:0cm;margin-left:40.0pt;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>상호: LG전자 주식회사<br>&nbsp;주소:&nbsp;서울특별시 영등포구 여의대로&nbsp;128 LG트윈타워<br>&nbsp;대표전화: 02-3777-1114<br>&nbsp;사업자등록번호: 107-86-14075</span></p>
+      <p style='margin-right:0cm;margin-left:40.0pt;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>&nbsp;</span></p>
+      <p style='margin-right:0cm;margin-left:40.0pt;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>&nbsp;</span></p>
+      <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><strong><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>2.&nbsp;</span></strong><strong><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>이용자의 권리&middot;의무</span></strong></p>
+      <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><strong><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>이용자의 법적 권리</span></strong></p>
+      <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>본 약관은 이용자에게 관련 법령에 따라 인정되는&nbsp;(1)&nbsp;특정 서비스 품질에 대한 권리 및&nbsp;(2)&nbsp;문제 발생 시 해결 방법에 대한 권리를 제한하거나 박탈하지 않습니다.&nbsp;예를 들어,&nbsp;이용자가 LG Quick Guide&nbsp;서비스상에서 상품을 구매한 소비자인 경우,&nbsp;관련 법령상 소비자에게 부여되는 모든 법적 권리를 계속해서 누릴 수 있습니다.</span></p>
+      <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>&nbsp;</span></p>
+      <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><strong><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>이용자 준수사항</span></strong></p>
+      <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>이용자는 LG Quick Guide&nbsp;서비스 이용 시&nbsp;<strong><span style='font-family:"맑은 고딕";'>다음과 같은 사항을 준수</span></strong>해야 합니다.</span></p>
+      <p style='margin-right:0cm;margin-left:20.0pt;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>&bull; 본 약관 및 관련 법령 준수</span></p>
+      <p style='margin-right:0cm;margin-left:20.0pt;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>&bull; 개인정보 보호,&nbsp;프라이버시권 및 지식재산권을 포함한 타인의 권리 존중</span></p>
+      <p style='margin-right:0cm;margin-left:20.0pt;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>&bull; 회사나 타인의 권리나 명예,&nbsp;신용 기타 정당한 이익을 침해하는 행위 금지</span></p>
+      <p style='margin-right:0cm;margin-left:20.0pt;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>&bull; LG Quick Guide&nbsp;서비스를 악용하거나,&nbsp;방해하거나,&nbsp;중단시키거나,&nbsp;서비스에 피해를 주는 행위 금지</span></p>
+      <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>&nbsp;</span></p>
+      <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>회사는 LG Quick Guide&nbsp;서비스를 이용하는 모든 이용자의 보안과 안전을 지키기 위해 노력하며,&nbsp;이용자들이 LG Quick Guide&nbsp;서비스를 자유롭게 이용할 수 있도록 최선을 다하고 있습니다.&nbsp;이를 위해 이용자는 다음과 같은 용도로 LG Quick Guide&nbsp;서비스를 이용하지 않도록 유의해 주시기 바랍니다.</span></p>
+      <p style='margin-right:0cm;margin-left:20.0pt;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>&bull; 소프트웨어 역설계 등의 방법으로 LG Quick Guide&nbsp;서비스의 소스코드나 알고리즘을 알아내기 위한 시도</span></p>
+      <p style='margin-right:0cm;margin-left:20.0pt;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>&bull; LG Quick Guide&nbsp;서비스의 기능을 임의로 수정하거나 비활성화하려는 시도</span></p>
+      <p style='margin-right:0cm;margin-left:20.0pt;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>&bull; LG Quick Guide&nbsp;서비스에 기초하여&nbsp;2차적 저작물을 만드는 행위</span></p>
+      <p style='margin-right:0cm;margin-left:20.0pt;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>&bull; LG Quick Guide&nbsp;서비스를 이용한 대여,&nbsp;재실시,&nbsp;호스팅과 같은 서비스를 제공하는 행위</span></p>
+      <p style='margin-right:0cm;margin-left:20.0pt;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>&bull; LG Quick Guide&nbsp;서비스 이용과 관련하여 회사 또는 제3자의 저작권 등 지식재산권을 침해하는 행위</span></p>
+      <p style='margin-right:0cm;margin-left:20.0pt;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>&bull; 본 약관이나 관련 법령에 반하는 불법적인 목적이나 방법으로 LG Quick Guide&nbsp;서비스를 사용하는 행위</span></p>
+      <p style='margin-right:0cm;margin-left:20.0pt;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>&bull; 악의적 또는 부정적인 방법으로 LG Quick Guide&nbsp;서비스를 이용하는 행위&nbsp;(예:&nbsp;해킹 또는 바이러스와 같은 악성코드나 유해한 데이터를 배포하는 행위 등)</span></p>
+      <p style='margin-right:0cm;margin-left:20.0pt;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>&bull; 회사의 업무 또는 다른 이용자를 방해하거나,&nbsp;시스템을 손상,&nbsp;과부하,&nbsp;악화시키거나,&nbsp;또는 보안을 취약하게 만드는 방법으로 서비스를 이용하는 행위</span></p>
+      <p style='margin-right:0cm;margin-left:20.0pt;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>&bull; LG Quick Guide&nbsp;서비스와 서버 간의 전송 신호를 해독하려고 시도하거나,&nbsp;서비스 또는 시스템으로부터 데이터나 정보를 수집하는 모든 행위</span></p>
+      <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>&nbsp;</span></p>
+      <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>이용자가 이상의 준수사항을 지키지 아니하는 경우,&nbsp;회사는 상당한 기간을 정하여 해당 이용자의 서비스 이용을 중지할 수 있습니다.&nbsp;해당 이용자의 준수사항 위반에 대한 입증책임은 회사에게 있으며,&nbsp;해당 이용자가 준수사항 위반에 대하여 본인의 고의나 과실이 없음을 입증한 경우,&nbsp;회사는 이용중지 조치를 철회합니다.&nbsp;서비스 이용이 중지되는 해당 기간 내에 이용중지 사유가 해소되지 아니하는 경우,&nbsp;회사는 해당 이용자의 계정을 말소할 수 있습니다.</span></p>
+      <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>&nbsp;</span></p>
+      <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><strong><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>이용자 책임</span></strong></p>
+      <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>이용자가 LG Quick Guide&nbsp;서비스를 이용함에 있어 행한 불법행위나 본 약관 위반으로 인하여 회사가 제3자로부터 손해배상 청구 등 소송을 포함한 여하한 이의를 제기 받는 경우 당해 이용자는 자신의 책임과 비용으로 회사를 면책시켜야 하며,&nbsp;회사가 면책되지 못하는 경우 해당 이용자는 그로 인하여 회사에게 발생한 모든 손해를 배상하여야 합니다.</span></p>
+      <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>&nbsp;</span></p>
+      <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>&nbsp;</span></p>
+      <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><strong><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>3.&nbsp;</span></strong><strong><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>라이선스</span></strong></p>
+      <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><strong><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>LG Quick Guide&nbsp;</span></strong><strong><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>서비스 라이선스</span></strong></p>
+      <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>회사는 이용자가 자유롭게 LG Quick Guide&nbsp;서비스를 이용할 수 있도록 LG Quick Guide&nbsp;서비스 사용에 관한 이용 권한을 부여합니다.&nbsp;다만,&nbsp;라이선스는 제한적이며,&nbsp;양도할 수 없고,&nbsp;철회 가능하며 독점적으로 제공되지 않으며,&nbsp;이용자는 개인적이고 비상업적 목적으로만 LG Quick Guide&nbsp;서비스를 이용할 수 있습니다.&nbsp;제공되는 라이선스에는 LG Quick Guide&nbsp;서비스를 제공하기 위하여 필요한 소프트웨어 및 기타 자료에 더하여,&nbsp;관련 업데이트,&nbsp;업그레이드,&nbsp;개선,&nbsp;수정,&nbsp;변경,&nbsp;추가도 포함됩니다.&nbsp;본 약관에 동의하더라도 이용자에게는 해당 약관에 명시된 조건에 부합하는 범위 내에서만 LG Quick Guide&nbsp;서비스 사용에 관한 이용 권한이 부여됩니다.&nbsp;또한, LG Quick Guide&nbsp;서비스 적용 국가,&nbsp;사용 디바이스,&nbsp;운영체제(OS)&nbsp;종류,&nbsp;회사 또는 파트너의 내부 정책 등 운영 및 기술상의 필요에 따라서 부여되는 이용 권한의 내용이나 범위 등이 변경될 수 있습니다.</span></p>
+      <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>&nbsp;</span></p>
+      <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>&nbsp;</span></p>
+      <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><strong><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>4. LG Quick Guide&nbsp;</span></strong><strong><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>서비스의 이용 제한</span></strong></p>
+      <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><strong><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>문제 상황에서의 조치</span></strong></p>
+      <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>회사는 다음과 같은 경우 이용자의 서비스 이용을 일시적으로 또는 영구적으로 정지 또는 해지할 권리를 보유합니다.&nbsp;회사는 이용자의 서비스 이용을 정지 또는 해지하고자 하는 경우 그 사유,&nbsp;일시 및 기간을 정하여 서면 또는 전화 등의 방법을 이용하여 해당 이용자 또는 대리인에게 통지합니다.&nbsp;다만,&nbsp;회사가 긴급하게 이용을 중지해야 할 필요가 있다고 인정하는 경우에는 위 통지 없이 서비스 이용을 정지할 수 있습니다.</span></p>
+      <p style='margin-right:0cm;margin-left:20.0pt;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>&bull; 이용자가 본 약관,&nbsp;추가약관,&nbsp;회사의 기타 정책 또는 관련 법령을 중대하거나 반복적으로 위반하거나 공공질서 내지 미풍양속에 반하는 행위를 한 경우</span></p>
+      <p style='margin-right:0cm;margin-left:20.0pt;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>&bull; 이용자가 본 약관 및 추가약관을 준수할 의사가 없음을 명시적으로 표시한 경우</span></p>
+      <p style='margin-right:0cm;margin-left:20.0pt;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>&bull; 법적 의무 또는 법원의 명령을 준수하기 위해 필요한 경우</span></p>
+      <p style='margin-right:0cm;margin-left:20.0pt;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>&bull; 이용자의 행동이 다른 이용자,&nbsp;제3자 또는 회사에 위해나 책임을 야기한다고 판단되는 합리적인 사유가 있는 경우(예:&nbsp;해킹,&nbsp;피싱,&nbsp;괴롭힘,&nbsp;스팸 발송,&nbsp;타인을 오도하는 행위,&nbsp;명예훼손 또는 이용자 소유가 아닌 콘텐츠 게시)</span></p>
+      <p style='margin-right:0cm;margin-left:20.0pt;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>&bull; 이용자가 부정한 용도로 서비스를 이용하고자 하는 경우</span></p>
+      <p style='margin-right:0cm;margin-left:20.0pt;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>&bull; 이용자가 영리를 추구할 목적으로 서비스를 이용하고자 하는 경우</span></p>
+      <p style='margin-right:0cm;margin-left:20.0pt;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>&bull; 회사 또는 제3자의 지적재산권을 침해하는 경우</span></p>
+      <p style='margin-right:0cm;margin-left:20.0pt;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>&bull; 기타 회사가 정한 세부 게시물 관련 지침에 위반하는 경우</span></p>
+      <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>본 조의 규정에 의하여 서비스 이용중지를 통지 받은 이용자 또는 그 대리인은 서비스 이용중지에 대하여 이의 신청을 할 수 있습니다.&nbsp;회사는 이용중지 사유가 해소된 것이 확인된 경우에 한하여 이용중지 조치를 즉시 해제합니다.</span></p>
+      <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>&nbsp;</span></p>
+      <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><strong><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>통지</span></strong></p>
+      <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>위와 같은 조치를 취하기 전에 회사는 합리적으로 가능한 경우 사전에 이용자에게 조치의 이유를 통지하여 이용자가 원인이 된 사유를 해결할 수 있는 기회를 제공합니다.&nbsp;다만,&nbsp;다음과 같은 상황에 해당할 것으로 판단되는 합리적인 사유가 있는 경우,&nbsp;이용자에 대한 통지를 하지 않을 수 있습니다.</span></p>
+      <p style='margin-right:0cm;margin-left:20.0pt;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>&bull; 다른 이용자,&nbsp;제3자 또는 회사에 위해 또는 책임을 야기하는 경우</span></p>
+      <p style='margin-right:0cm;margin-left:20.0pt;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>&bull; 관련 법령 또는 규제당국의 명령에 위반하는 경우</span></p>
+      <p style='margin-right:0cm;margin-left:20.0pt;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>&bull; 규제당국의 조사를 방해하는 경우</span></p>
+      <p style='margin-right:0cm;margin-left:20.0pt;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>&bull; LG Quick Guide&nbsp;서비스의 운영,&nbsp;무결성 또는 보안을 저해하는 경우</span></p>
+      <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>&nbsp;</span></p>
+      <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><strong><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>이용제한 등 조치로 인한 이용자의 책임</span></strong></p>
+      <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>이용자의 서비스 이용 제한 또는 계정 해지와 관련하여 발생한 손해 및 손실(데이터 및 콘텐츠 포함)은 해당 이용자가 책임을 부담하고,&nbsp;회사는 이에 대한 책임을 지지 않습니다. LG Quick Guide&nbsp;서비스를 통해 저장된 관련 데이터 및 콘텐츠가 손실되지 않도록 복사본을 만들거나 온라인 백업 서비스 등을 활용하여 다른 위치에 반드시 백업해 주시기 바랍니다</span></p>
+      <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>&nbsp;</span></p>
+      <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>&nbsp;</span></p>
+      <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><strong><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>5. LG Quick Guide&nbsp;</span></strong><strong><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>서비스 변경,&nbsp;중단 및 종료</span></strong></p>
+      <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><strong><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>LG Quick Guide&nbsp;</span></strong><strong><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>서비스 변경</span></strong></p>
+      <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>회사는 언제든지 다음과 같이 LG Quick Guide&nbsp;서비스를 변경할 수 있습니다.</span></p>
+      <p style='margin-right:0cm;margin-left:20.0pt;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>&bull; 일부 서비스 또는 기능을 변경,&nbsp;추가,&nbsp;삭제할 수 있음</span></p>
+      <p style='margin-right:0cm;margin-left:20.0pt;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>&bull; 이용자의 서비스 이용이나 접근을 중단하거나 제한할 수 있음</span></p>
+      <p style='margin-right:0cm;margin-left:20.0pt;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>&bull; 서비스를 통해 제공되는 콘텐츠를 검토,&nbsp;플래그 표시,&nbsp;수정,&nbsp;게재 거부,&nbsp;접근 차단,&nbsp;제거할 수 있음</span></p>
+      <p style='margin-right:0cm;margin-left:20.0pt;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>&bull; 이용자에게 향상된 기능을 제공하기 위하여 서비스 업데이트를 위해 필요한 데이터를 이용자의 제품/기기에 수시로 저장 할 수 있음.&nbsp;이와 같이 저장된 데이터는 오직 이용자의 동의를 받아 서비스를 업데이트 할 경우에만 이용됨.&nbsp;단,&nbsp;이용자의 안전이나 보안을 위해 서비스 업데이트가 필요한 경우,&nbsp;이용자의 동의 없이 자동으로 서비스 업데이트를 위해 필요한 데이터 다운로드 및 업데이트가 진행될 수 있음.</span></p>
+      <p style='margin-right:0cm;margin-left:40.0pt;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>&nbsp;</span></p>
+      <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><strong><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>LG Quick Guide&nbsp;</span></strong><strong><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>서비스 중단 및 종료</span></strong></p>
+      <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>회사는 다음과 같은 사유가 있는 경우에는 언제든지 LG Quick Guide&nbsp;서비스의 전부 또는 일부를 중단하거나 종료할 수 있습니다.</span></p>
+      <p style='margin-right:0cm;margin-left:20.0pt;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>&bull; 회사가 LG Quick Guide&nbsp;서비스의 운영 또는 개선을 위하거나 또는 법령상 의무 준수를 위한 경우</span></p>
+      <p style='margin-right:0cm;margin-left:20.0pt;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>&bull; 회사에 서비스를 제공하는 제휴사가 서비스 전부 또는 일부의 제공을 종료하기로 결정하는 경우</span></p>
+      <p style='margin-right:0cm;margin-left:20.0pt;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>&bull; 컴퓨터,&nbsp;서버,&nbsp;통신망 등 정보통신설비의 보수점검,&nbsp;교체 또는 고장,&nbsp;서비스 이용의 폭주,&nbsp;통신두절 등 운영상 서비스를 지속하기 어려운 상당한 이유가 있는 경우</span></p>
+      <p style='margin-right:0cm;margin-left:40.0pt;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>&nbsp;</span></p>
+      <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><strong><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>변경,&nbsp;중단,&nbsp;종료 시 안내,&nbsp;보상 및 책임</span></strong></p>
+      <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>LG Quick Guide&nbsp;</span><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>서비스 이용에 불리한 영향을 미치는 중대한 서비스 변경,&nbsp;중단 및 종료에 대해서는 계정 등록 이메일이나 서비스 내 공지사항 등 합리적인 방식으로 사전에 통지하겠습니다.&nbsp;다만,&nbsp;사전 통지가 가능하지 않다고 판단되는 합리적인 사유가 있거나,&nbsp;이용자에게 편익을 주는 서비스에 새로운 기능을 추가하는 변경 또는 법적인 이유로 시행되는 변경은 사전 통지 없이 즉시 적용될 수 있습니다.</span></p>
+      <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>관련 법령에 특별한 규정이 없는 한 LG Quick Guide&nbsp;서비스의 전부 또는 일부의 변경,&nbsp;중단 또는 종료를 사유로 별도의 보상은 하지 않습니다.</span></p>
+      <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>한편, LG Quick Guide&nbsp;서비스가 종료되거나 계정이 해지되더라도 본 약관의 유효기간 동안 발생한 이용자 또는 회사의 권리 및 의무에 대한 책임은 존속합니다.</span></p>
+      <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>&nbsp;</span></p>
+      <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>&nbsp;</span></p>
+      <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><strong><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>6.&nbsp;</span></strong><strong><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>회사의 책임 및 보증</span></strong></p>
+      <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><strong><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>회사의 책임</span></strong></p>
+      <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>본 약관은 오로지 관련 법령이 허용하는 한도에서 회사의 책임을 제한합니다.&nbsp;회사는 무료로 제공하는 서비스의 이용과 관련하여 개인정보 처리방침에서 정하는 내용에 위반하지 않는 한 어떠한 손해에 대하여도 책임을 지지 않습니다.&nbsp;이용자가 회사의 고의 또는 과실로 인하여 손해를 입게 될 경우,&nbsp;회사는 관련 법령에 따라 이용자가 입은 손해를 배상하지만,&nbsp;천재지변 또는 이에 준하는 불가항력,&nbsp;이용자의 고의 또는 과실 및 그 외 회사가 합리적으로 통제할 수 없는 사유&nbsp;(법률,&nbsp;하위법령,&nbsp;명령,&nbsp;통신두절,&nbsp;파업,&nbsp;전쟁,&nbsp;폭동,&nbsp;테러행위 또는 그 위협,&nbsp;자연재해,&nbsp;전염병 등을 포함함)로 인하여 발생한 손해에 대해서는 책임을 부담하지 않습니다.&nbsp;회사는 이용자의 귀책사유로 인한 서비스 이용 장애에 대하여는 책임을 지지 않으며,&nbsp;이용자가 서비스를 이용하여 기대하는 수익을 상실한 것이나 서비스를 통하여 얻은 자료로 인한 손해에 관하여 책임을 지지 않습니다.&nbsp;회사는 이용자가 서비스에 게재한 정보,&nbsp;자료,&nbsp;사실의 신뢰도,&nbsp;정확성 등 내용에 관하여는 책임을 지지 않으며,&nbsp;서비스용 설비의 보수,&nbsp;교체,&nbsp;정기점검,&nbsp;공사 등 부득이한 사유로 발생한 손해에 대한 책임이 면제됩니다.&nbsp;회사는 이용자의 컴퓨터 오류에 의해 손해가 발생한 경우 또는 이용자가 본인인증 서비스를 이용함에 있어 자신의 개인정보를 부실하게 기재하여 손해가 발생한 경우에 책임을 지지 않습니다.</span></p>
+      <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>LG Quick Guide&nbsp;</span><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>서비스를 이용하기 위해서는 인터넷 접속이 필요한 경우가 있습니다.&nbsp;인터넷 접속 시 이용자가 가입한 요금제에 따라 추가 요금이 발생할 수 있으며,&nbsp;회사는 인터넷 접속 가능 여부 또는 속도에 대해 책임을 지지 않습니다.</span></p>
+      <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>&nbsp;</span></p>
+      <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><strong><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>회사의 보증</span></strong></p>
+      <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>회사는 LG Quick Guide&nbsp;서비스(서비스 내 콘텐츠,&nbsp;서비스의 특정 기능,&nbsp;신뢰성,&nbsp;가용성,&nbsp;이용자의 필요를 충족할 수 있는 능력 포함)와 관련하여 오로지&nbsp;(1)&nbsp;본 약관 및 추가약관에 기술되어 있는 사항 또는&nbsp;(2)&nbsp;관련 법령에서 정한 사항만을 보증합니다. LG Quick Guide&nbsp;서비스와 관련하여 그 외의 다른 사항에 관한 약속은 하지 않습니다.&nbsp;특히, LG Quick Guide&nbsp;서비스와 연동되는 스마트 기기가 네트워크 접속 불량 또는 LG Quick Guide&nbsp;서비스 업데이트 등의 이유로 서비스와 연동되지 아니하고 이용이 중단될 수도 있습니다.</span></p>
+      <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>또한 법령에서 요구하지 않는 한,&nbsp;회사는 상품성,&nbsp;특정 목적에의 적합성 및 비침해성 등에 대한 묵시적인 보증을 포함하여 어떠한 사항에 대해서도 묵시적 보증도 제공하지 않습니다.</span></p>
+      <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>LG Quick Guide&nbsp;</span><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>서비스는 관련 법령이 허용하는 한도 내에서 어떠한 사항의 보증도 없이 &lsquo;있는 그대로&rsquo; 또는 &lsquo;이용 가능한 상태로&rsquo; 제공됩니다.&nbsp;예를 들어,&nbsp;회사는 서비스에 관해 어떠한 상업성,&nbsp;양호한 품질의 유지,&nbsp;숙련된 기기 조작 능력,&nbsp;특정 목적 적합성,&nbsp;신뢰성,&nbsp;정확성,&nbsp;바이러스 부재,&nbsp;조용한 환경 유지,&nbsp;제3자 권리나 기타 권리에 대한 비침해 등을 포함한 사항에 관하여 구체적으로 어떠한 약속을 하거나 법률적으로 보증을 하지 않습니다.</span></p>
+      <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>&nbsp;</span></p>
+      <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>&nbsp;</span></p>
+      <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><strong><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>7.&nbsp;</span></strong><strong><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>제3자 서비스</span></strong></p>
+      <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>회사는 서비스를 통해 유용한 콘텐츠를 제공하기 위해 글로벌 제휴사들과 함께 협업하고 있습니다.&nbsp;따라서 LG Quick Guide&nbsp;서비스에는 제3자가 제공하는 콘텐츠(정보,&nbsp;링크,&nbsp;광고 등),&nbsp;제품,&nbsp;서비스,&nbsp;기타 자료 등(이하&nbsp;&quot;제3자 서비스&quot;)이 포함될 수 있습니다.&nbsp;제3자 서비스를 통해 다양한 혜택을 누릴 수 있지만,&nbsp;회사는 제3자 서비스에 대한 어떠한 통제력도 없습니다.&nbsp;회사는 귀하의 제3자 서비스 이용에 대하여 그 어떠한 진술이나 보증도 하지 않으며,&nbsp;회사는 이용자의 제3자 서비스 이용으로 인해 초래되는 손해나 손실에 대해 어떠한 책임도 지지 않습니다.&nbsp;타사의 이용약관 및 개인정보처리동의서 등으로 인하여 발생된 분쟁에 대하여 회사는 개입할 의무가 없으며 이로 인한 손해를 배상할 책임도 없습니다.</span></p>
+      <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>&nbsp;</span></p>
+      <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>&nbsp;</span></p>
+      <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><strong><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>8.&nbsp;</span></strong><strong><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>광고</span></strong></p>
+      <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>회사는 다양한 LG Quick Guide&nbsp;서비스를 무료로 제공하며,&nbsp;이를 위해 일부 LG Quick Guide&nbsp;서비스에는 광고가 표시됩니다. LG Quick Guide&nbsp;서비스에 회사 또는 제3자가 제공하는 광고,&nbsp;마케팅 관련 정보를 표시할 수 있으며,&nbsp;회사는 광고주인 제3자가 제공한 정보 및 광고의 유용성과 정확성 또는 완전성 등에 대하여 어떠한 권한도 가지고 있지 아니합니다.&nbsp;따라서,&nbsp;회사는 광고에 대한 신뢰의 결과로 발생한 이용자의 손해를 비롯하여 이용자와 광고주 간의 교신 또는 거래에 관하여 회사의 귀책사유가 없는 한 광고에 관하여 어떠한 책임이나 의무도 부담하지 않습니다.</span></p>
+      <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>&nbsp;</span></p>
+      <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><strong><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>9.&nbsp;</span></strong><strong><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>분쟁 해결,&nbsp;준거법 및 관할</span></strong></p>
+      <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><strong><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;font-weight:normal;'>준거법</span></strong></p>
+      <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><strong><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;font-weight:normal;'>본 약관에 명시되지 않은 사항은 전기통신사업법 등 대한민국의 관계법령과 상관습에 따릅니다.</span></strong></p>
+      <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><strong><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;font-weight:normal;'>&nbsp;</span></strong></p>
+      <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><strong><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;font-weight:normal;'>관할</span></strong></p>
+      <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><strong><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;font-weight:normal;'>서비스 이용과 관련하여 회사와 이용자 간에 발생하는 분쟁과 관련된 소송의 관할 법원은 민사소송법상의 관할을 가지는 대한민국 법원으로 하며,&nbsp;준거법은 대한민국법으로 합니다.</span></strong></p>
+      <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>&nbsp;&nbsp;</span></p>
+      <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><strong><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>10.&nbsp;</span></strong><strong><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>본 약관의 변경</span></strong></p>
+      <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>&nbsp;</span></p>
+      <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>회사는 수시로 관련 법령을 위반하지 않는 범위 내에서 본 약관 및 추가약관을 변경할 수 있으며,&nbsp;변경 시 적어도&nbsp;10일 전에 그 개정 이유와 적용 일자를 알리겠습니다.&nbsp;또한,&nbsp;이용자에게 불리할 수 있는 중대한 내용의 변경의 경우,&nbsp;최소&nbsp;30일 이전에 알리겠습니다.</span></p>
+      <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>본 약관 및 추가약관의 변경 등 본 약관에 따라 회사가 회원에게 안내 또는 고지 해야 할 내용은 해당 서비스 내 공지,&nbsp;별도의 전자적 수단(이메일 등),&nbsp;서면,&nbsp;가맹점 내 게시, SMS통지,&nbsp;회사 인터넷 홈페이지 게시 등 해당 서비스의 특성을 고려할 때 합리적인 수단 중&nbsp;1가지 이상을 통해 미리 안내해드리도록 하겠습니다.&nbsp;회사가&nbsp;E-MAIL&nbsp;통보 또는 서면통보의 방법으로 본 약관이 개정된 사실 및 개정된 내용 등을 회원에게 고지하는 경우에는 회원이 회사에 기 제공한&nbsp;E-MAIL이나 주소 지 중 가장 최근에 제공된&nbsp;E-MAIL&nbsp;또는 주소지로 통보합니다.</span></p>
+      <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>변경 약관 시행 후 LG Quick Guide&nbsp;서비스 이용 시,&nbsp;이용자는 변경 약관에 동의한 것으로 간주됩니다.&nbsp;이용자는 언제든지 회원을 탈퇴하여 계정을 해지함으로써 더 이상 변경된 약관의 적용을 받지 않을 수 있습니다.&nbsp;회원이 개정약관의 적용에 명시적으로 동의하지 않는다는 의사를 표시한 경우 회사는 개정 약관의 내용을 적용할 수 없으며,&nbsp;이 경우 회사 및 회원은 이용계약을 해지할 수 있습니다.</span></p>
+      <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>&nbsp;</span></p>
+      <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>&nbsp;</span></p>
+      <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><strong><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>11.&nbsp;</span></strong><strong><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>일반사항</span></strong></p>
+      <p style='margin-right:0cm;margin-left:20.0pt;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>&bull; 본 약관에서 정하지 아니한 사항과 본 약관의 해석에 관하여는 「약관의 규제에 관한 법률」,&nbsp;「정보통신망 이용촉진 및 정보보호 등에 관한 법률」 등 관련 법령에 의하며,&nbsp;관련 법령에서 정하지 아니한 경우 상관습에 의합니다.</span></p>
+      <p style='margin-right:0cm;margin-left:20.0pt;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>&bull; 이용자는 법률에 따라 본 서비스 약관과 같은 계약으로 제한할 수 없는 일정한 권리를 보유합니다.&nbsp;본 약관은 어떠한 경우에도 그러한 권리를 제한하지 않습니다.</span></p>
+      <p style='margin-right:0cm;margin-left:20.0pt;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>&bull; 본 약관은 이용자와 회사 간의 관계를 설명하는 문서이고,&nbsp;본 약관에 따른 이용자와 회사의 관계로 인해 제3자가 이익을 얻더라도,&nbsp;해당 제3자에게 어떠한 법적 권리도 발생하지 않습니다.</span></p>
+      <p style='margin-right:0cm;margin-left:20.0pt;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>&bull; 본 약관과 추가약관이 상충되는 경우 해당 서비스에 대해서는 추가약관이 우선 적용됩니다.</span></p>
+      <p style='margin-right:0cm;margin-left:20.0pt;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>&bull; 본 약관의 특정 조항이 유효하지 않거나 집행 불가능한 것으로 판명되는 경우,&nbsp;이는 다른 조항에 영향을 미치지 않습니다.</span></p>
+      <p style='margin-right:0cm;margin-left:20.0pt;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>&bull; 본 약관(일체의 추가약관 포함)은 이용자와 회사 간의 완전한 법적 합의로서,&nbsp;이용자의 본 서비스 이용에 대한 사항을 규율하며,&nbsp;본 서비스에 관하여 이용자와 회사 간에 체결된 그 어떠한 구두 또는 서면 합의에 우선합니다.</span></p>
+      <p style='margin-right:0cm;margin-left:20.0pt;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>&bull; 이용자가 본 약관 또는 추가약관을 준수하지 않을 경우,&nbsp;회사가 즉시 조치를 취하지 않더라도 이는 향후 조치를 취하는 것을 포함하여 회사가 보유한 권리를 포기한다는 의미는 아닙니다.</span></p>
+      <p style='margin-right:0cm;margin-left:20.0pt;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>&bull; 이용자에게 서비스를 제공하기 위해 회사가 각종 정보를 서비스상 공지사항으로 제공하거나 우편물,&nbsp;이메일 및&nbsp;SMS, MMS&nbsp;등을 통해 이용자에게 제공할 수 있습니다.&nbsp;다만,&nbsp;이용자가 정보 제공을 원치 않는다는 의사를 밝히는 경우 해당 이용자는 정보 제공 대상에서 제외되며,&nbsp;정보 제공 대상에서 제외되어 정보를 제공받지 못해 불이익이 발생할 경우 회사는 이에 대한 책임을 지지 않습니다.</span></p>
+      <p style='margin-right:0cm;margin-left:20.0pt;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>&bull; 회사는 이용자의 본 약관에 따른 권리에 중대한 영향이 없는 범위 내에서 본 약관에 따른 회사의 권리의무 전부 또는 일부를 제3자에게 양도하거나 위탁 또는 이전할 수 있습니다.&nbsp;이용자는 회사에게 서면으로 요청하고 회사가 이용자와 합의하지 않는 한 본 약관에 따른 본인의 권리의무를 제3자에게 양도하거나 위탁 또는 이전할 수 없습니다.</span></p>
+      <p style='margin-right:0cm;margin-left:20.0pt;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>&bull; 회사는 법률상 허용되는 범위 내에서 회사가 합리적으로 통제할 수 없는 사유(예:&nbsp;법률,&nbsp;하위법령,&nbsp;명령,&nbsp;통신두절,&nbsp;파업,&nbsp;전쟁,&nbsp;폭동,&nbsp;테러행위 또는 그 위협,&nbsp;자연재해 등)로 회사가 본 약관에 따른 의무를 이행하지 못하는 경우,&nbsp;이에 대한 일체의 책임을 부담하지 않습니다.</span></p>
+      <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>&nbsp;</span></p>
+      <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"맑은 고딕";margin-top:9.0pt;margin-bottom:9.0pt;text-align:justify;line-height:107%;background:white;'><span style='font-size:13px;font-family:"맑은 고딕";color:#333333;'>본 약관은&nbsp;2023년 3월 9일부터&nbsp;시행합니다.</span></p>
+      <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"맑은 고딕";margin-top:0cm;margin-bottom:8.0pt;text-align:justify;line-height:107%;'>&nbsp;</p>  
+    </div>
+  </div>
+</body>
+</html>
